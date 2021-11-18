@@ -1,0 +1,11 @@
+# 내 풀이
+a, b = map(int, input().split(' '))
+for n in range(b):
+    for m in range(a):
+        print("*",end="")
+    print("")
+
+# 다른 사람의 풀이
+a, b = map(int, input().strip().split(' '))
+answer = ('*'*a +'\n')*b
+print(answer)
