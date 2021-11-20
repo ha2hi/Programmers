@@ -1,0 +1,20 @@
+# 내 풀이
+def solution(n):
+    n = list(str(n))
+    result = []
+    for i in n:
+        result.append(int(i))
+    result.sort(reverse=True)
+    
+    a =''
+    for i in result:
+        a += str(i)
+    
+    return int(a)
+  
+# 다른 사람의 풀이
+def solution(n):
+    ls = list(str(n))
+    ls.sort(reverse = True)
+    return int("".join(ls))
+    
