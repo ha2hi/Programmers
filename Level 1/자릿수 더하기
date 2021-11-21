@@ -1,0 +1,11 @@
+# 내 풀이
+def solution(n):
+    n = list(str(n))
+    result = 0
+    for i in n:
+        result += int(i)
+    return result
+
+# 다른 사람의 풀이
+def solution(n):
+    return sum([int(i) for i in str(n)])
