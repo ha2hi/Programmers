@@ -1,0 +1,12 @@
+# 내 풀이
+seoul = ["Jane", "Kim"]
+def solution(seoul):
+    for c in range(len(seoul)):
+        if seoul[c] == "Kim":
+            return "김서방은 {}에 있다".format(c)
+      
+# 다른 사람의 풀이
+seoul = ["Jane", "Kim"]
+def solution(seoul):
+    return "김서방은 {}에 있다".format(seoul.index("Kim"))
+        
