@@ -1,0 +1,9 @@
+# 내 풀이
+def solution(arr):
+    result = -1
+    answer = []
+    for i in arr:
+        if result != i:
+            result = i
+            answer.append(i)
+    return answer
