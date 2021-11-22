@@ -1,0 +1,29 @@
+# 내 풀이
+def solution(s):
+    answer = True
+    if len(s) != 4 and len(s) != 6:
+        return False
+        
+    for i in s:
+        if i.isalpha():
+            answer = answer and False
+        else:
+            answer = answer and True
+    return answer
+ 
+ 
+# 다른 사람의 풀이
+def solution(s):
+    if len(s) != 4 and len(s) != 6:
+        return False:
+    
+    try:
+        int(s)
+        return True
+    except ValueError:
+        return False
+        
+# 다른 사람의 풀이
+def solution(s):
+    return len(s) in (4, 6) and s.isdigit()
+    
