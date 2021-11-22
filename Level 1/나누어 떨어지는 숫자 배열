@@ -1,0 +1,15 @@
+# 내 풀이
+def solution(arr, divisor):
+    result = []
+    for i in arr:
+        if i % divisor == 0:
+            result.append(i)
+            result.sort()
+    if result == []:
+        return [-1]
+    return result
+        
+# 다른 사람의 풀이
+def solution(arr, divisor):
+    return sorted([i for i in arr if i%divisor == 0]) or [-1]
+            
